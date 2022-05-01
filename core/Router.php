@@ -22,11 +22,11 @@ class Router
     {
         $path =  $this->request->getPath();
         $method = $this->request->getMethod();
-        echo '<pre>';
-        var_dump($this->routes);
-        echo '</pre>';
-        $callback = $this->routes[$method][$path];
-
-        var_dump($callback);
+        $callback = $this->routes[$method][$path] ?? false;
+        if ($callback === false) {
+            echo "not found";
+            exit;
+        }
+        echo call_user_func($callback);
     }
 }
