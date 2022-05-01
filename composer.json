@@ -1,0 +1,15 @@
+{
+  "name": "whusthat/app",
+  "authors": [
+    {
+      "name": "Whusthat",
+      "email": "mueller.sebastian117@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  },
+  "require": {}
+}
