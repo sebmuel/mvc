@@ -1,0 +1,11 @@
+{
+    "Var_Dump": {
+      "prefix": "vd",
+      "scope": "php",
+      "body": [
+        "var_dump($1);",
+        "$2"
+      ],
+      "description": "var_dump"
+    }
+  }

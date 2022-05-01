@@ -1,15 +1,15 @@
 {
-  "name": "whusthat/app",
-  "authors": [
-    {
-      "name": "Whusthat",
-      "email": "mueller.sebastian117@gmail.com"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "app\\": "./"
-    }
-  },
-  "require": {}
+    "name": "muell/mvc",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "sebmuel",
+            "email": "mueller.sebastian117@protonmail.com"
+        }
+    ],
+    "require": {}
 }
