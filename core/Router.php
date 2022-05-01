@@ -34,7 +34,7 @@ class Router
 
         if ($callback === false) {
            $this->response->setStatusCode(404);
-           return "Not found";
+           return $this->renderView("_404");
         }
 
         if (is_string($callback)){
@@ -58,8 +58,6 @@ class Router
         ob_start();
         include_once Application::$ROOT_DIR .  "/views/layouts/main.php";
         // output return and clear buffer
-        $t = ob_get_clean();
-        var_dump($t);
         return ob_get_clean();
 
     }
